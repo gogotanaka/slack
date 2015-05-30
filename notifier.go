@@ -1,4 +1,4 @@
-package notifier
+package slackNotifier
 
 import (
 	"encoding/json"

@@ -1,12 +1,16 @@
 # slack/notifier
 
+## How to
+
+    $ go get github.com/gogotanaka/slackNotifier
+
 ```go
 package main
 
-import "github.com/gogotanaka/slack/notifier"
+import "github.com/gogotanaka/slackNotifier"
 
 func main() {
-  notifier := notifier.New("https://hooks.slack.com/services/XXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+  notifier := slackNotifier.New("https://hooks.slack.com/services/XXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
   notifier.Username = "gogotanaka"
 
   notifier.Ping("Hi!")
